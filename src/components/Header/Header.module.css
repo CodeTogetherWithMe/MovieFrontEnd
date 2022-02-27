@@ -8,6 +8,28 @@
     background-color: white;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     z-index: 99;
+
+    position: fixed;
+    top:0;
+    left:0;
+    right:0
+}
+
+.navBarModified{
+    height:60px;
+
+    display:grid;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    z-index: 99;
+
+    position: fixed;
+    top:0;
+    left:0;
+    right:0
 }
 
 .navBar>div>a{
@@ -15,3 +37,11 @@
     color: black;
     margin: 0px 20px;
 }
+
+.navBarModified>div>a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px;
+}
+
+

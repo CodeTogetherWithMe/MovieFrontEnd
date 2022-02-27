@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import {Link} from 'react-router-dom';
 
 import styled from './Header.module.css';
 
 const Header = () => {
+
+    const [cssVal, setCssVal] = useState(styled.navBar)
+
+
+    useEffect(()=>{
+        window.addEventListener("scroll", onScrollEvent);
+    },[])
+
+    const onScrollEvent = () =>{
+        window.scrollY===0?setCssVal(styled.navBar):setCssVal(styled.navBarModified)
+    }
+
+    
     return ( 
         <React.Fragment>
-            <div className={styled.navBar}>
+            <div style={{height:"60px"}}></div>
+            <div className={cssVal}>
                 <div>
                 <Link to="/home">Home</Link>
                 <Link to="/library">Library</Link>

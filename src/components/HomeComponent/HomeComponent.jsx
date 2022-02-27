@@ -18,7 +18,7 @@ const HomeComponent = () => {
                     <img src={ph2} />
                 </div>
                 <div  className={styled.rightPane}>
-                    <Link to="/library"><button className='btn btn-dark p-5 m-5'>
+                    <Link to="/library"><button className='btn btn-dark p-5 m-5' > 
                         <div >ENTER</div>
                     </button>
                     </Link>
